@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express();
 let dotenv = require('dotenv').config();
-const port = process.env.PORT;
+const port = process.env.PORT || 8080;
 const { getPostByIdEndpoint, getPostsEndpoint } = require('./src/controllers/posts');
 
 
